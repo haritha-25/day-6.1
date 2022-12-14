@@ -1,0 +1,431 @@
+find the culprit
+1a
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I’m JavaScript!");
+ //ans:here for the string two singlw quotes is used in starting of string instead of double quotes and ended with a single quotes instead of double quotes
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+
+1b
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+ //ans: here the js file linked is written as scripts and here we have mentioned it as script
+</body>
+</html>
+
+scripts.js
+alert(“I’m invoked!”);
+
+1c
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js”></script>
+</body>
+</html>
+script.js
+alert("I’m JavaScript!");
+alert('Hello') ;
+// this line is not having semicolon
+alert(`World`);
+alert(3 +1+ 2); // this is multiple line code and its working
+//ans:the first 3 lines are string while the last one is number datatype 
+1d
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+lname;
+alert( admin ); // "Guvi geek"
+//ans: here we add both the strings to give the output
+
+1e
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html
+
+
+SCRIPT FILE
+
+
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek";
+let name = fname+" "+lname;
+alert( `hello ${name}` );// via symbol (``)
+// ans: using tempelate literal ${ }
+1f
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html
+Script.js
+let a = +prompt("First number?");
+let b = +prompt("Second number?");
+alert(a + b);
+//ans:using typecaste to convert string to number
+1g
+If you run the below scritpt you will get “Code is Blasted”
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”.
+fix.html
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+var a = "2" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+//ans:here var a is considered as string so thus it is executed to give output as "code is blasted".
+and by converting it into number "var a=2>12;" here 12 is greater than 2 so else part is taken to consideration and we get "diffused"
+
+
+1i
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let a = prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+//ans:here we are typecasting string to number thus anything here is considered a number 
+by removing it we can print success
+
+1j
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let value = prompt('How many runs you scored in this ball');
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}//here we use === so everything is compared ie , that returns false for the values which are not of a similar type. It performs type casting for equality.; six===6 is considered as wrong
+thus using == leads to comparing even in different datatypes ie:. This means before doing the equality comparison it performs the necessary type conversion.
+
+
+1k
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let login = 'Employee';
+let message = (login == 'Employee') ? :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+//ans:here we use ==  thus we compare the employee and director name here and thus we display the greeting and for people not a employee no login is diplayed
+
+1l
+
+
+
+Fix the code to welcome the boss
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+// You cant change the value of the msg
+let message;
+//ans:
+if (null || 2 || undefined )
+{
+message = &quot;welcome boss&quot;;
+}
+else
+{
+message = &quot;Go away&quot;;
+}
+console.log(message);
+
+1m
+
+Fix the code to welcome the boss
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let message;
+let lock = 2;
+//Dont change any code below this 
+if (null || lock || undefined )//ans:
+{
+    message = &quot;Go away&quot;;
+    }
+    else
+    {
+    message = &quot;welcome&quot;;
+    }
+    console.log(message);
+
+  1n
+
+Fix the code to welcome the boss
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let message;
+let lock = 2;lock=null;
+//Dont change any code below this
+if (lock &amp;&amp; &quot; &quot; || undefined )
+{
+message = &quot;Go away&quot;;
+}
+else
+{
+message = &quot;welcome&quot;;
+}
+console.log(message);
+
+1o
+
+Change the code to print
+
+3
+
+2
+
+1
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+//You can change only 2 characters
+let i = 3;
+while (i) {
+  console.log( --i );
+}
+
+
+
+
+
+
+1p
+
+Change the code to print 1 to 10 in 4 lines
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let num = 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+
+
+
+
+1q
+
+Change the code to print even numbers
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 1) {
+  console.log(num)
+}
+
+
+
+1r
+
+Change the code to print all the gifts
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log('Wrapped ${'gifts[i]'} and added a bow!');
+}
+
+
+1s
+
+Fix the code to disarm the bomb.
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+script.js
+
+let countdown = &100;
+let settimeout=100;
+while (countdown > 0) {
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+}
+//ans:here we set timeout for the countdown
+
+
+
+1t
+
+Whats the msg printed and why?
+
+var lemein = “0”;
+var lemeout = 0;
+var msg = “”;
+if (lemein) {
+ msg += “hi”;
+ }
+if (lemeout) {
+ msg += ‘Hello’;
+}
+console.log(msg);
+Whats the msg printed and why? Guess you answer before running it.
+
+var lemein = &#39;0&#39;;
+var lemeout = 0;
+var msg = &#39;&#39;;
+if (lemein) {
+msg += &#39;hi&#39;;
+}
+if (lemeout) {
+msg += &#39;Hello&#39;;
+}
+
+
+console.log(msg); //hi
+
+
+
+
+
+
+
